@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-  res.set("Cache-Control", "public, s-maxage=300"); // 5 min
+  res.setHeader("Cache-Control", "public, s-maxage=300"); // 5 min
 
   res.status(200).json({
     name: "John Doe",
